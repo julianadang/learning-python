@@ -1,0 +1,45 @@
+#Name greeting
+print('Hvad hedder du til fornavn (1), mellemnavn (2) og efternavn (3)?')
+print('Goddag' + ', ' + input(1) + ' ' + input(2) + ' ' + input(3))
+
+#Favorite number/angry boss
+print('Hvad er dit yndlingstal?')
+nyt_tal = int(input())+1
+print("Må jeg foreslå " + str(nyt_tal) + "?")
+print('A HVAD FOR NOGET?! Hvad mener du med "' + input() + '"?')
+
+#Table of contents
+str_title = "Table of Contents"
+str_ch1 = "Chapter 1: Getting started"
+str_ch1_pg = "page 1"
+str_ch2 = "Chapter 2: Numbers"
+str_ch2_pg = "page 9"
+str_ch3 = "Chapter 3: Letters"
+str_ch3_pg = "page 13"
+print(str_title.center(40, ' '))
+print(str_ch1.ljust(0, ' '), str_ch1_pg.rjust(14, ' '))
+print(str_ch2.ljust(0, ' '), str_ch2_pg.rjust(22, ' '))
+print(str_ch3.ljust(0, ' '), str_ch3_pg.rjust(23, ' '))
+
+#More Arithmetic
+print('2^3 is ', pow(2, 3))
+
+#Random Numbers (five random numbers between 1-100)
+print('Here are 5 random numbers between 1-100')
+import random
+for x in range (5):
+    print(random.randint(1,101))
+    
+#Random number dividable by 10
+print('Here are 5 random numbers between 1-100 dividible by 10')
+import random
+for x in range (5):
+    print(random.randint(1,11)*10)
+    
+#Random tile map (generate three random tiles)
+print('These are your new civilization III world tiles:')
+import random
+char = 'X' + 'o'
+for y in range(3):
+    tile_generator = "".join(random.choice(char) for x in range(8))
+    print(tile_generator)
