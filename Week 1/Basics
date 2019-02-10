@@ -1,0 +1,46 @@
+#simple arithmetic
+print(23+1939)
+
+#floats and integers
+print(2.5)
+print(25)
+
+#escape rules
+print('you\'re swell')
+print('escape characters with: \\')
+print('do\\do')
+print('do\do')
+
+#string arithmetic
+print('noot noot '*5)
+print('alle elsker'+' pingu')
+print('19'+'90')
+
+#variables and assignments
+noot = 'noot noot '*5
+print(noot)
+name="noot"
+print(name[-1])
+print(name[-3])
+var1 = 'nooty'
+var2 = 'booty'
+print(var1 + var2)
+
+#Conversions str() and int()
+var3 = 19
+var4 = '90'
+print(str(var3) + var4)
+print(var3 + int(var4))
+
+#int()
+print("int(1990) is:", int(1990))
+print("int(19.90) is:", int(19.90))
+print("int('1990') is", int('1990'))
+
+#float()
+print("float(1990) is:", float(1990))
+print("float(19.90) is:", float(19.90))
+print("float('1990')", float('1990'))
+
+#input()
+print(input())
