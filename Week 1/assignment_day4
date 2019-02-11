@@ -1,0 +1,27 @@
+#99 bottles of beer on the wall lyrics
+x = 100
+while x != 2 :
+    x = x - 1
+    y = x - 1
+    print(x, 'bottles of beer on the wall,', x, 'bottles of beer. Take one down and pass it around, ', y ,'bottles of beer on the wall.')
+print('1 bottle of beer on the wall, 1 bottle of beer. Take one down and pass it around, 0 bottles of beer on the wall.')
+
+#Deaf grandma (replies only if you write in upper case, gives you random year reply, ends conversation when shouting BYE)
+import random
+print('My dear grand child, what\'s your question?')
+str = input()
+while str.isupper() == False:
+    print('WHAT?! SPEAK UP, GIRL!')
+    str = input()
+    if str.isupper() == True:
+        year = random.randint(1900,2000)
+        print('NO, NOT SINCE', year)
+        str = input()
+    if str == 'BYE' :
+        print('BYE, GIRL')
+
+#Leap years between 1600-2000 (leap years are divisible by 4 and 400 but not 100)
+my_list = list(range(1599,2001))
+result = list(filter(lambda x: (x % 4 == 0 and x % 100 != 0 or x % 400 == 0), my_list))
+print(result)
+
