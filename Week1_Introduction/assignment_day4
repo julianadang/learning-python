@@ -1,3 +1,4 @@
+# ____________________________________________H. LOOPING AND LISTS____________________________________________
 #                               (7) 99 bottles of beer on the wall lyrics
 #   Write a program that prints out the lyrics to that beloved classic, “99 Bottles of Beer on the Wall.”
 x = 100
@@ -41,5 +42,11 @@ print(result)
 #   Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on
 #   an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for
 #   example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
+
+
+
+
+
+# ________________________________________I. WRITING YOUR OWN FUNCTIONS________________________________________
 
 
