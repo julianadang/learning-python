@@ -14,7 +14,7 @@ D. Variables and Assignment
 E. Mixing It Up  
 F. More About Functions and Methods  
 G. Flow Control  
-H. Arrays and Iterators  
+H. Looping and Lists (Arrays and Iterators)  
 I. Writing Your Own Functions  
 J. Classes  
 K. There is nothing new in the chapter (recursion)  
