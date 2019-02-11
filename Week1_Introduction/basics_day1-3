@@ -1,9 +1,22 @@
+
+#________________________B. NUMBERS________________________
+
+#introduction to print
+print(3)
+
+#integer and float
+print(2.5)
+print(25)
+
 #simple arithmetic
 print(23+1939)
 
-#floats and integers
-print(2.5)
-print(25)
+#________________________C. LETTERS________________________
+
+#string arithmetic
+print('noot noot '*5)
+print('alle elsker'+' pingu')
+print('19'+'90')
 
 #escape rules
 print('you\'re swell')
@@ -11,21 +24,21 @@ print('escape characters with: \\')
 print('do\\do')
 print('do\do')
 
-#string arithmetic
-print('noot noot '*5)
-print('alle elsker'+' pingu')
-print('19'+'90')
+#______________D. VARIABLES AND ASSIGNMENTS________________
+#don't repeat yourself
+boot = 'noot noot '*5
+print(boot)
 
-#variables and assignments
-noot = 'noot noot '*5
-print(noot)
-name="noot"
-print(name[-1])
-print(name[-3])
 var1 = 'nooty'
 var2 = 'booty'
 print(var1 + var2)
 
+#love affair between numbers and letters
+name="noot"
+print(name[-1])
+print(name[-3])
+
+#_____________________E. MIXING IT UP______________________
 #Conversions str() and int()
 var3 = 19
 var4 = '90'
