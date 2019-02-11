@@ -6,9 +6,9 @@ from the 1MWTT Summer of Code program and Learn Python the Hard Way. Spoiler ale
 
 The exercises are listed in accordance with the following syllabus:
 
-WEEK 1:
-A. Getting Started: Installing Python on Windows, Mac
-B. Numbers
+WEEK 1:  
+A. Getting Started: Installing Python on Windows, Mac  
+B. Numbers  
 C. Letters
 D. Variables and Assignment
 E. Mixing It Up
