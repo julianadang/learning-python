@@ -1,20 +1,18 @@
-#   Name greeting
-#   Assignment description: Full name greeting. Write a program that asks
-#   for a person’s first name, then middle, and then last. Finally, it
-#   should greet the person using their full name.
+#                               (1) Full Name Greeting
+#   Write a program that asks for a person’s first name, then middle, and then last.
+#   Finally, it should greet the person using their full name.
 print('Hvad hedder du til fornavn (1), mellemnavn (2) og efternavn (3)?')
 print('Goddag' + ', ' + input(1) + ' ' + input(2) + ' ' + input(3))
 
-#   Favorite number/angry boss
-#   Bigger, better favorite number. Write a program that asks for a person’s
-#   favorite number. Have your program add 1 to the number, and then suggest
-#   the result as a bigger and better favorite number. 
+#                               (2) Bigger, Better Favorite Number
+#   Write a program that asks for a person’s favorite number. Have your program add 1
+#   to the number, and then suggest the result as a bigger and better favorite number. 
 print('Hvad er dit yndlingstal?')
 nyt_tal = int(input())+1
 print("Må jeg foreslå " + str(nyt_tal) + "?")
 print('A HVAD FOR NOGET?! Hvad mener du med "' + input() + '"?')
 
-#   Angry boss
+#                               (3) Angry boss
 #   Write an angry boss program that rudely asks what you want. Whatever you
 #   answer, the angry boss should yell it back to you and then fire you. For
 #   example, if you type in I want a raise, it should yell back like this:
@@ -23,7 +21,7 @@ print('Boss: "WHAT DO YOU WANT?"')
 print('your reply:')
 print('Boss: WHADDAYA MEAN "' + input() + '"?!? YOU\'RE FIRED!!')
 
-#   Table of contents
+#                               (4) Table of contents
 #   Here’s something for you to do in order to play around more with center,
 #   ljust, and rjust: write a program that will display a table of contents so
 #   that it looks like this:
@@ -46,19 +44,20 @@ print(str_ch3.ljust(0, ' '), str_ch3_pg.rjust(23, ' '))
 #   More Arithmetic
 print('2^3 is ', pow(2, 3))
 
-#   Random Numbers (five random numbers between 1-100)
+#                               (5) Random Numbers
+#   Five random numbers between 1-100
 print('Here are 5 random numbers between 1-100')
 import random
 for x in range (5):
     print(random.randint(1,101))
     
-#   Random number dividable by 10
+#   Five random number dividable by 10
 print('Here are 5 random numbers between 1-100 dividible by 10')
 import random
 for x in range (5):
     print(random.randint(1,11)*10)
     
-#   New World
+#                               (6) New World
 #   Try to generate your random Civilization III world by generating a land 'X'
 #   tile or a water 'o' tile randomly:
 #   oooXXXoo
