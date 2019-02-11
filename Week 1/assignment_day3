@@ -36,7 +36,7 @@ import random
 for x in range (5):
     print(random.randint(1,11)*10)
     
-#Random tile map (generate three random tiles)
+#Random tile map (generate three random tiles with length 8)
 print('These are your new civilization III world tiles:')
 import random
 char = 'X' + 'o'
