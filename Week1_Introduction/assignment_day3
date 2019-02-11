@@ -1,3 +1,4 @@
+# _________________________________E. MIXING IT UP__________________________________
 #                               (1) Full Name Greeting
 #   Write a program that asks for a person’s first name, then middle, and then last.
 #   Finally, it should greet the person using their full name.
@@ -12,6 +13,7 @@ nyt_tal = int(input())+1
 print("Må jeg foreslå " + str(nyt_tal) + "?")
 print('A HVAD FOR NOGET?! Hvad mener du med "' + input() + '"?')
 
+#________________________________F. MORE ABOUT METHODS_______________________________
 #                               (3) Angry boss
 #   Write an angry boss program that rudely asks what you want. Whatever you
 #   answer, the angry boss should yell it back to you and then fire you. For
@@ -41,6 +43,7 @@ print(str_ch1.ljust(0, ' '), str_ch1_pg.rjust(14, ' '))
 print(str_ch2.ljust(0, ' '), str_ch2_pg.rjust(22, ' '))
 print(str_ch3.ljust(0, ' '), str_ch3_pg.rjust(23, ' '))
 
+#______________________________HIGHER MATH (OPTIONAL)_____________________________
 #   More Arithmetic
 print('2^3 is ', pow(2, 3))
 
