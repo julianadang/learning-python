@@ -13,7 +13,7 @@ nyt_tal = int(input())+1
 print("Må jeg foreslå " + str(nyt_tal) + "?")
 print('A HVAD FOR NOGET?! Hvad mener du med "' + input() + '"?')
 
-#________________________________F. MORE ABOUT METHODS_______________________________
+#________________________F. MORE ABOUT FUNCTIONS AND METHODS________________________
 #                               (3) Angry boss
 #   Write an angry boss program that rudely asks what you want. Whatever you
 #   answer, the angry boss should yell it back to you and then fire you. For
