@@ -1,4 +1,4 @@
-#99 bottles of beer on the wall lyrics
+#99 bottles of beer on the wall lyrics (countdown from 99)
 x = 100
 while x != 2 :
     x = x - 1
