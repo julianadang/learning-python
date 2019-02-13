@@ -1,0 +1,53 @@
+#________________________________List methods_________________________________
+
+#append()
+animal = ['fish', 'cat', 'dog', 'rodent']
+animal.append('bird')
+print(animal)
+
+#copy() / shallow copy
+animal_new = animal.copy()
+
+#clear()
+animal_new.clear()
+print('Cleared list:',animal_new)
+print('Original unchanged:',animal)
+
+#count()
+numbers = [2, 3, 1, 8, 4, 2, 62, 6, 6, 12, 6]
+print('The number of 2s in this list is:',numbers.count(2))
+print('The number of 6s in this list is:',numbers.count(6))
+
+#extend()
+animal_numbers = animal.copy()
+animal_numbers.extend(numbers)
+print('New list with extension:',animal_numbers)
+
+#index()
+index = animal.index('fish')
+print('Fish has position',index,'in the list')
+
+#insert()
+animal_insert = animal.copy()
+animal_insert.insert(3, 'snakes')
+print('Snake inserted at position 3:',animal_insert)
+
+#pop() - the opposite of insert()
+animal_pop = animal_insert.copy()
+animal_pop.pop(0)
+print('Item at position 0 deleted:',animal_pop)
+
+#remove() - if you don't know the position, only item name
+animal_pop.remove('cat')
+print('Cat removed from list:',animal_pop)
+#in case of duplicate items in list, remove() only removes the first item
+
+#reverse()
+animal_pop.reverse()
+# print(list.reverse()) returns 'None' therefore do the following:
+print('Reversed list:',animal_pop)
+#also possible to reverse with slice operator
+#syntax: list[start:stop:step]
+back_to_normal = animal_pop[::-1]
+print('Reversed to normal:', back_to_normal)
+#reversed() does not work for me
