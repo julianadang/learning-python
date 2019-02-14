@@ -31,8 +31,9 @@ print('Fish has position',index,'in the list')
 animal_insert = animal.copy()
 animal_insert.insert(3, 'snakes')
 print('Snake inserted at position 3:',animal_insert)
+#note that in contrast to extend(), insert() adds tuples and sets with respective parentheses and brackets
 
-#pop() - the opposite of insert()
+#pop() - removes item at position X. If no argument given, last item is deleted
 animal_pop = animal_insert.copy()
 animal_pop.pop(0)
 print('Item at position 0 deleted:',animal_pop)
@@ -44,10 +45,23 @@ print('Cat removed from list:',animal_pop)
 
 #reverse()
 animal_pop.reverse()
-# print(list.reverse()) returns 'None' therefore do the following:
+# print(animal_pop.reverse()) returns 'None' therefore do the following:
 print('Reversed list:',animal_pop)
 #also possible to reverse with slice operator
 #syntax: list[start:stop:step]
 back_to_normal = animal_pop[::-1]
 print('Reversed to normal:', back_to_normal)
-#reversed() does not work for me
+#the supposedly built-in function reversed() does not work for me
+
+#sort() / sorted(): sort() does not return any list but changes the original
+#if you need to maintain the original use sorted()
+#syntax: list.sort(key=...,reverse=...), sorted(list, key=..., reverse=...) 
+animal.sort()
+print('Sorted list:',animal)
+animal.sort(reverse=True)
+print('Sorted in descending order:',animal)
+animal.sort(key=len)
+print('Sorted according to length:',animal)
+print('With the sorted() function:',sorted(animal, key=len, reverse=True))
+print('The latest original is unchanged:',animal)
+
