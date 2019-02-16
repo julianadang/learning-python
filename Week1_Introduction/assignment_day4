@@ -42,8 +42,26 @@ print(result)
 #   Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on
 #   an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for
 #   example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
+print('Make to-do list')
+todo = [] 
+i = 0
+while True : 
+    i += 1
+    task = input()    
+    if task == '' :
+        break
+    todo.append(task)
+    todo.sort()
+print('This is your to-do list:') 
+print(*todo, sep = "\n")
+if len(todo) == 0:
+    print('Your list is empty')
 
 
+#                               (11) Table of Contents Part 2
+#    Write a table of contents program here. Start the program with a list holding all of the information for your table of
+#    contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted
+#    table of contents. Use string formatting such as left align, right align, center.
 
 
 
