@@ -63,26 +63,26 @@ if len(todo) == 0:
 #    contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted
 #    table of contents. Use string formatting such as left align, right align, center.
 print('Enter chapter names.')
-table = [] 
+chapter_list = [] 
 x = 0
 while True:
     x += 1
     chapter = input('Chapter %d:' %x) 
     if chapter == '' :
         break
-    table.append(chapter)
-print('These are your chapters: ',table) 
+    chapter_list.append(chapter)
+print('These are your chapters: ',chapter_list) 
 
 print('Enter page numbers.') 
-reference = [] 
+page_numbers = [] 
 y = 0
 while True:
     y += 1
     number = input('Chapter %d:' %y)
     if number == '' :
         break
-    reference.append(number)
-print('These are your references:',reference)    
+    page_numbers.append(number)
+print('These are your page numbers:',page_numbers)    
 
 list_len = len(table)
 title = "Table of Contents"
@@ -90,8 +90,8 @@ print(title.center(40, ' '))
 g = 0
 for z in range(list_len) :
     g += 1
-    ch = "Chapter %d: " %g + table[z] 
-    pg = "page" + reference[z] 
+    ch = "Chapter %d: " %g + chapter_list[z] 
+    pg = "page" + page_numbers[z] 
     len_ch = 20-len(table[z])
     print(ch.ljust(0, ' '), pg.rjust(len_ch, ' '))
 
