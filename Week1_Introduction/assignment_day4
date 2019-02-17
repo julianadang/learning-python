@@ -94,6 +94,7 @@ for z in range(list_len) :
     pg = "page" + page_numbers[z] 
     len_ch = 20-len(table[z])
     print(ch.ljust(0, ' '), pg.rjust(len_ch, ' '))
+#Note: if you enter more chapters than page numbers or vice versa, there will be an error message saying "out of range", which is nice. 
 
 # ________________________________________I. WRITING YOUR OWN FUNCTIONS________________________________________
 
